@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- themes.xml — Material Design theme for the Photo Gallery app -->
+<resources>
+
+    <!--
+        Base application theme.
+        Inherits from Theme.MaterialComponents.DayNight.DarkActionBar so we get
+        Material buttons, cards, and dialogs out of the box.
+    -->
+    <style name="Theme.PhotoGallery" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary colour used for the ActionBar, buttons, etc. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        <!-- Accent / secondary colour -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <!-- Status bar colour -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+    <!--
+        Splash / launch screen theme (applied briefly before the app is ready).
+        Keeps the status bar consistent.
+    -->
+    <style name="Theme.PhotoGallery.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

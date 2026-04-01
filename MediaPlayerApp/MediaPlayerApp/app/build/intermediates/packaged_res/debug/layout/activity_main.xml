@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵  Media Player"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No media loaded"
+            android:textColor="#BB86FC"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Source Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnOpenFile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="📂  Open File"
+                android:backgroundTint="#3700B3"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnOpenUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🌐  Open URL"
+                android:backgroundTint="#018786"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Audio Panel (visible when audio file loaded) -->
+        <LinearLayout
+            android:id="@+id/audioPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:background="#1E1E2E"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎵  Audio"
+                android:textColor="#BB86FC"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="8dp"/>
+
+            <!-- Big music note icon area -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="♪"
+                android:textSize="80sp"
+                android:textColor="#BB86FC"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Video Panel (visible when URL loaded) -->
+        <LinearLayout
+            android:id="@+id/videoPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:background="#000000"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+        </LinearLayout>
+
+        <!-- SeekBar & Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#BB86FC"
+                android:thumbTint="#BB86FC"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Control Buttons Row 1: Play, Pause -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="▶  Play"
+                android:backgroundTint="#03DAC5"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="⏸  Pause"
+                android:backgroundTint="#FF8C00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Control Buttons Row 2: Stop, Restart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="⏹  Stop"
+                android:backgroundTint="#CF6679"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="⏮  Restart"
+                android:backgroundTint="#5C6BC0"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Usage hint -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip: Open File → pick local audio | Open URL → stream video"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

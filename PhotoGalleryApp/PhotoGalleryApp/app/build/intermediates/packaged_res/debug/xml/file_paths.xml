@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    file_paths.xml — FileProvider configuration
+    Declares which directories the app is allowed to share via content:// URIs.
+
+    The camera intent requires a content:// URI (not a file:// URI) on Android 7+
+    to write the captured photo to our chosen file.  FileProvider handles this
+    translation securely.
+
+    Paths declared here:
+      cache-path  → getCacheDir()  (used as the temporary capture location)
+      external-path → Environment.getExternalStorageDirectory() (for the final saved file)
+      external-files-path → getExternalFilesDir(null) (app-specific external storage)
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- App's internal cache directory — temporary home for the raw capture file -->
+    <cache-path
+        name="camera_temp"
+        path="." />
+
+    <!-- Root of external storage (Pictures/, DCIM/, etc.) -->
+    <external-path
+        name="external_storage"
+        path="." />
+
+    <!-- App-specific external storage directory (no READ_EXTERNAL_STORAGE needed) -->
+    <external-files-path
+        name="external_files"
+        path="." />
+
+</paths>

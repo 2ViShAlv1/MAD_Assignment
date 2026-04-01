@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_main.xml
+    Layout for MainActivity — the home screen of the Photo Gallery app.
+
+    Structure:
+     - App title at the top
+     - Section for choosing a save folder (displays selected path)
+     - Three action buttons: Take Photo, Choose Folder, View Gallery
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- ── App Icon / Header ──────────────────────────────────────────── -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_camera"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Camera icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture, organise and browse your photos"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="40dp" />
+
+        <!-- ── Current Save Folder Card ──────────────────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Save Folder"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="6dp" />
+
+                <!-- Displays the currently chosen folder path -->
+                <TextView
+                    android:id="@+id/tvSelectedFolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading…"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:ellipsize="middle"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── Action Buttons ────────────────────────────────────────────── -->
+
+        <!-- Button 1: Open the device camera to take a new photo -->
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📷  Take Photo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button 2: Open the folder picker to choose save / view folder -->
+        <Button
+            android:id="@+id/btnChooseFolder"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📁  Choose Folder"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/secondary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button 3: Open the gallery to browse images in the selected folder -->
+        <Button
+            android:id="@+id/btnViewGallery"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🖼️  View Gallery"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

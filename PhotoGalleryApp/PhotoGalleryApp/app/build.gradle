@@ -1,0 +1,73 @@
+// app/build.gradle
+// Module-level build file — defines how the app module is compiled and packaged.
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // The namespace matches the Java package name
+    namespace 'com.example.photogallery'
+
+    // compileSdk: the Android API level used to compile the app
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.photogallery"
+
+        // minSdk: the lowest Android version the app supports (API 21 = Android 5.0)
+        minSdk 21
+
+        // targetSdk: the API level the app is optimised for
+        targetSdk 34
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // Enables code shrinking and obfuscation for release builds
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Java 8 compatibility for lambda expressions and method references
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // AndroidX AppCompat — provides backward-compatible Activity, ActionBar, etc.
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    // Material Design components — buttons, cards, dialogs with MD styling
+    implementation 'com.google.android.material:material:1.11.0'
+
+    // ConstraintLayout — flexible view positioning (used in some layouts)
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // RecyclerView — efficient scrollable list/grid for the photo gallery
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // CardView — card UI component used in detail and main screens
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Activity KTX — provides modern ActivityResultLauncher APIs
+    implementation 'androidx.activity:activity:1.8.2'
+
+    // Core KTX — essential AndroidX utilities
+    implementation 'androidx.core:core:1.12.0'
+
+    // Unit testing
+    testImplementation 'junit:junit:4.13.2'
+
+    // Instrumented (on-device) testing
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_gallery.xml
+    Layout for GalleryActivity — displays all images in a selected folder
+    as a scrollable 3-column grid.
+
+    Structure:
+     - Header bar showing the folder path
+     - RecyclerView (grid) for image thumbnails
+     - Empty-state message when no images are found
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- ── Folder path header ─────────────────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_folder"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Folder icon" />
+
+        <!-- Shows the folder path being browsed -->
+        <TextView
+            android:id="@+id/tvGalleryFolderPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:text="Loading folder…" />
+
+    </LinearLayout>
+
+    <!-- ── Image count / status label ────────────────────────────────────── -->
+    <!-- Uses a FrameLayout so RecyclerView and empty-message can overlap -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- RecyclerView holds the grid of image thumbnails.
+             GridLayoutManager (3 columns) is set in GalleryActivity. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:clipToPadding="false" />
+
+        <!-- Shown when the selected folder contains no images -->
+        <LinearLayout
+            android:id="@+id/tvEmptyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_image_placeholder"
+                android:alpha="0.4"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="No images" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No images found in this folder"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take a photo or choose a different folder"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

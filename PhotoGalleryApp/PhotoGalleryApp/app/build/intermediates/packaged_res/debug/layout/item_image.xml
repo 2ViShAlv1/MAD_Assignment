@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    item_image.xml
+    Layout for a single cell in the GalleryActivity image grid.
+
+    Each cell shows:
+     - A square thumbnail of the image (fills the cell)
+     - The file name as a small label below the thumbnail
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="2dp">
+
+    <!-- Thumbnail — fixed 110dp height, centerCrop to fill the cell -->
+    <ImageView
+        android:id="@+id/ivGridImage"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:background="@color/grid_cell_bg"
+        android:contentDescription="Thumbnail" />
+
+    <!-- File name label beneath the thumbnail -->
+    <TextView
+        android:id="@+id/tvGridImageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="10sp"
+        android:textColor="@color/text_secondary"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:background="@color/background" />
+
+</LinearLayout>

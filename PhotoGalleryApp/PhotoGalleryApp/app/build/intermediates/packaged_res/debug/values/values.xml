@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#388E3C</color>
+    <color name="background">#F5F5F5</color>
+    <color name="black">#FF000000</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="error">#D32F2F</color>
+    <color name="grid_cell_bg">#E0E0E0</color>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="secondary">#0288D1</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Photo Gallery</string>
+    <string name="btn_choose_folder">Choose Folder</string>
+    <string name="btn_delete">Delete Image</string>
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_view_gallery">View Gallery</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_confirm">Delete</string>
+    <string name="dialog_delete_message">Are you sure you want to permanently delete this image?</string>
+    <string name="dialog_delete_title">Delete Image</string>
+    <string name="label_image_date">Date Taken:</string>
+    <string name="label_image_name">Name:</string>
+    <string name="label_image_path">Path:</string>
+    <string name="label_image_size">Size:</string>
+    <string name="no_images_message">No images found in this folder</string>
+    <string name="permission_camera">Camera permission is required to take photos.</string>
+    <string name="permission_storage">Storage permission is required to save and view photos.</string>
+    <style name="Theme.PhotoGallery" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+    <style name="Theme.PhotoGallery.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
