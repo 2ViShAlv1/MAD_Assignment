@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_item_currency_selected.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\item_currency_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_ic_swap.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\ic_swap.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_item_currency_spinner.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\item_currency_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_spinner_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\spinner_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_item_spinner_dropdown.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_item_spinner_selected.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\item_spinner_selected.xml"
+    },
+    {
+        "merged": "com.example.currencyconverter.app-debug-39:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.currencyconverter.app-main-41:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_swap_button_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\swap_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\drawable_currency_symbol_bg.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\drawable\\currency_symbol_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-debug-39:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.7\\com.example.currencyconverter.app-main-41:\\layout\\activity_main.xml"
+    }
+]

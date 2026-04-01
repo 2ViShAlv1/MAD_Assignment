@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="table_row_alt">#1A2535</color>
+    <style name="Theme.CurrencyConverter" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/blue_300</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/grey_900</item>
+        <item name="colorSecondary">@color/blue_200</item>
+        <item name="colorSecondaryContainer">@color/blue_dark_container</item>
+        <item name="colorOnSecondaryContainer">@color/blue_200</item>
+        <item name="android:statusBarColor">@color/dark_surface</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/grey_400</item>
+        <item name="colorOutline">@color/grey_700</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+</resources>
