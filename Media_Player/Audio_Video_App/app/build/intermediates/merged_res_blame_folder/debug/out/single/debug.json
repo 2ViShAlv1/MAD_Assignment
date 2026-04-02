@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-merged_res-28:\\drawable_ic_pause.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-main-30:\\drawable\\ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-merged_res-28:\\drawable_ic_restart.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-main-30:\\drawable\\ic_restart.xml"
+    },
+    {
+        "merged": "com.example.audiovideoapp-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.example.audiovideoapp-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-merged_res-28:\\drawable_ic_play.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-main-30:\\drawable\\ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-merged_res-28:\\drawable_ic_stop.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.5\\com.example.audiovideoapp-main-30:\\drawable\\ic_stop.xml"
+    }
+]
